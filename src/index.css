@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary text-headerColor text-5xl font-bold leading-tight;
+  }
+  a {
+    @apply text-[15px] text-gray-700 font-primary text-base font-semibold leading-normal;
+  }
+  p {
+    @apply text-[15px] text-dimWhite font-primary text-base font-normal leading-relaxed;
+  }
+  ul {
+    @apply text-[15px] text-dimWhite font-primary text-base font-normal leading-relaxed;
+  }
+  li {
+    @apply text-[15px] text-dimWhite font-primary text-base font-normal leading-relaxed;
+  }
+}
+
+@screen sm {
+  @layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply text-4xl;
+    }
+    a {
+      @apply text-base;
+    }
+    p {
+      @apply text-sm;
+    }
+    ul,
+    li {
+      @apply text-sm;
+    }
+  }
+}
+
+@screen md {
+  @layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply text-3xl;
+    }
+    a {
+      @apply text-base;
+    }
+    p {
+      @apply text-base;
+    }
+    ul,
+    li {
+      @apply text-base;
+    }
+  }
+}
+
+@screen lg {
+  @layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply text-2xl;
+    }
+  }
+}
+
+@screen xl {
+  @layer base {
+    /* Define styles for XL breakpoint */
+  }
+}
+/* banner */
+.bannerBackground {
+  background-image: url(./assets/bannerBackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* banner */
+.workProccesBackground {
+  background-image: url(./assets/workProcces.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.featuresCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
